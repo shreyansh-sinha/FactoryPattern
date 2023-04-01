@@ -5,7 +5,7 @@ namespace FactoryPattern
 {
     public class DrawFactory
     {
-        public static IShape? GetShape(string input)
+        public IShape? GetShape(string input)
         {
             switch(input)
             {

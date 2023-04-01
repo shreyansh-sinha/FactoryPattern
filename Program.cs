@@ -5,10 +5,11 @@ public class Program
 {
     public static void Main(String[] args)
     {
-        IShape circle = DrawFactory.GetShape("Circle");
+        DrawFactory drawFactory = new DrawFactory();
+        IShape circle = drawFactory.GetShape("Circle");
         circle.Draw();
 
-        IShape square = DrawFactory.GetShape("Square");
+        IShape square = drawFactory.GetShape("Square");
         square.Draw();
     }
 }
